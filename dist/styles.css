@@ -1,13 +1,75 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Italiana&display=swap');
-:root{color-scheme:dark;font-family:'DM Sans',Arial,sans-serif;background:#100d11;color:#f2edf0;scroll-behavior:smooth}
-*{box-sizing:border-box}body{margin:0}a{color:inherit}img{display:block;max-width:100%}
-.site-header{height:90px;display:flex;justify-content:space-between;align-items:center;padding:0 clamp(24px,6vw,100px);border-bottom:1px solid #ffffff20;position:relative;z-index:2;background:#100d11}
-.brand{text-decoration:none;font-family:Georgia,serif;font-size:21px;letter-spacing:.21em;white-space:nowrap}.brand span{color:#c79caf}.site-header nav{display:flex;gap:38px}.site-header nav a{font-size:14px;text-decoration:none;color:#ddd0d8}.site-header nav a:hover,.text-link:hover{color:#ffbeda}
-.hero{min-height:680px;display:grid;grid-template-columns:1fr minmax(400px,48%);overflow:hidden;background:radial-gradient(ellipse at 68% 42%,#472036 0%,#1b111a 43%,#100d11 78%)}
-.hero-copy{padding:clamp(85px,11vw,175px) 5vw 90px clamp(24px,9vw,145px);position:relative;z-index:1;max-width:750px;align-self:center}
-.eyebrow{color:#db9fbc;font-size:13px;font-weight:700;letter-spacing:.22em;line-height:1.5;margin:0 0 22px}.hero h1,.section-intro h2,.author h2{font:normal clamp(64px,7.2vw,116px)/.98 'Italiana',Georgia,serif;letter-spacing:-.035em;margin:0}.hero h1{max-width:640px}.hero-lead{font-size:19px;line-height:1.7;color:#dbcdd5;max-width:510px;margin:34px 0 34px}.text-link{display:inline-flex;align-items:center;gap:12px;font-weight:600;text-decoration:none;border-bottom:1px solid #d8a4bc;padding-bottom:9px}.text-link span{font-size:22px;font-weight:400}.hero-art{height:100%;max-height:800px;min-height:680px;position:relative;overflow:hidden}.hero-art:before{content:"";position:absolute;inset:0;background:linear-gradient(90deg,#1a111a 0%,transparent 32%);z-index:1;pointer-events:none}.hero-art img{width:100%;height:100%;object-fit:cover;object-position:50% 44%;filter:saturate(.85)}.art-caption{position:absolute;z-index:2;right:30px;bottom:30px;font-size:12px;font-weight:700;letter-spacing:.18em;color:#f6dce9;text-shadow:0 1px 8px #000}
-.books{padding:110px clamp(24px,9vw,145px) 130px;background:#161116}.section-intro{margin:0 0 55px}.section-intro h2{font-size:clamp(48px,6vw,82px)}.book{display:grid;grid-template-columns:minmax(240px,400px) 1fr;align-items:center;gap:clamp(45px,8vw,150px);padding:48px 0;border-top:1px solid #ffffff27}.book:last-child{border-bottom:1px solid #ffffff27}.book-cover{aspect-ratio:3/4.35;overflow:hidden;background:#211921;box-shadow:16px 22px 55px #0007}.bound-cover{background-image:url('assets/bound-by-hate.webp');background-size:auto 100%;background-position:right center;background-repeat:no-repeat}.mercenary-cover img{width:100%;height:100%;object-fit:cover}.book-info{max-width:650px}.book h3{font:normal clamp(45px,5.5vw,84px)/1.02 'Italiana',Georgia,serif;letter-spacing:-.025em;margin:0 0 28px}.book h3 em{display:block;font-style:normal;color:#d4a9bd}.book-info>p:not(.eyebrow){font-size:17px;line-height:1.8;color:#d9ced4}.book-info .tropes{font-size:14px!important;color:#d9a8c1!important;letter-spacing:.02em;margin-top:30px}.tropes span{margin:0 6px;color:#8d687b}
-.author{text-align:center;padding:110px 24px 125px;background:radial-gradient(ellipse at top,#38202d,#140f15 65%)}.author h2{font-size:clamp(64px,8vw,105px)}.author>p:last-child{font-size:19px;line-height:1.7;max-width:620px;margin:28px auto 0;color:#dfd1d9}
-footer{padding:30px clamp(24px,6vw,100px);display:flex;justify-content:space-between;gap:20px;font-size:13px;color:#baabb3;background:#100d11}
-@media(max-width:800px){.site-header{height:72px}.brand{font-size:16px}.site-header nav{gap:18px}.hero{grid-template-columns:1fr}.hero-copy{padding:75px 24px 55px}.hero h1{font-size:clamp(62px,12vw,92px)}.hero-art{min-height:0;height:510px;max-height:none}.hero-art:before{background:linear-gradient(180deg,#1a111a 0%,transparent 20%)}.hero-art img{object-position:50% 43%}.books{padding:85px 24px}.book{gap:35px;grid-template-columns:minmax(160px,35%) 1fr}.book h3{font-size:clamp(40px,6vw,60px)}}
-@media(max-width:570px){.site-header{padding:0 18px}.brand{font-size:14px;letter-spacing:.1em}.site-header nav{gap:12px}.site-header nav a{font-size:13px}.eyebrow{font-size:12px}.hero-copy{padding:70px 24px 48px}.hero-lead{font-size:17px}.hero-art{height:460px}.art-caption{font-size:10px;right:18px}.section-intro h2{font-size:55px}.book{grid-template-columns:1fr;gap:28px;padding:34px 0 48px}.book-cover{width:min(78%,340px)}.book h3{font-size:56px}.book-info>p:not(.eyebrow){font-size:16px}.author{padding:90px 24px}.author>p:last-child{font-size:17px}footer{display:block;line-height:2}}
+
+:root { color-scheme: dark; font-family: 'DM Sans', Arial, sans-serif; background: #100d11; color: #f2edf0; scroll-behavior: smooth; }
+* { box-sizing: border-box; }
+body { margin: 0; }
+a { color: inherit; }
+
+.site-header { height: 86px; display: flex; justify-content: space-between; align-items: center; padding: 0 clamp(24px, 6vw, 100px); border-bottom: 1px solid #ffffff20; background: #100d11; }
+.brand { text-decoration: none; font-family: Georgia, serif; font-size: 21px; letter-spacing: .21em; white-space: nowrap; }
+.brand span { color: #c79caf; }
+.site-header nav { display: flex; gap: 38px; }
+.site-header nav a { font-size: 14px; text-decoration: none; color: #ddd0d8; }
+.site-header nav a:hover, .text-link:hover { color: #ffbeda; }
+
+.eyebrow { color: #db9fbc; font-size: 13px; font-weight: 700; letter-spacing: .22em; line-height: 1.5; margin: 0 0 24px; }
+.hero { min-height: 670px; display: flex; flex-direction: column; justify-content: center; position: relative; padding: 90px clamp(24px, 9vw, 145px) 115px; overflow: hidden; background: radial-gradient(ellipse at 72% 27%, #422033 0%, #22131f 39%, #100d11 80%); }
+.hero::after { content: 'J D'; position: absolute; right: 7vw; top: 20%; font: 260px/1 'Italiana', Georgia, serif; letter-spacing: -.12em; color: #db9fbc0b; pointer-events: none; }
+.hero-copy { max-width: 880px; position: relative; z-index: 1; }
+.hero h1, .section-intro h2, .author h2 { font: normal clamp(64px, 7.2vw, 116px)/.98 'Italiana', Georgia, serif; letter-spacing: -.035em; margin: 0; }
+.hero h1 em { color: #e7b1cb; font-style: normal; }
+.hero-lead { font-size: 19px; line-height: 1.7; color: #dbcdd5; max-width: 590px; margin: 34px 0 34px; }
+.text-link { display: inline-flex; align-items: center; gap: 12px; font-weight: 600; text-decoration: none; border-bottom: 1px solid #d8a4bc; padding-bottom: 9px; }
+.text-link span { font-size: 22px; font-weight: 400; }
+.hero-bottom { position: absolute; bottom: 30px; left: clamp(24px, 9vw, 145px); right: clamp(24px, 9vw, 145px); margin: 0; padding-top: 18px; border-top: 1px solid #ffffff2e; font-size: 11px; font-weight: 700; letter-spacing: .2em; color: #b797a8; }
+.hero-bottom span { margin: 0 16px; color: #e1b0c8; }
+
+.books { padding: 110px clamp(24px, 9vw, 145px) 130px; background: #161116; }
+.section-intro { max-width: 850px; margin: 0 0 70px; }
+.section-intro h2 { font-size: clamp(48px, 6vw, 82px); }
+.section-intro > p:last-child { max-width: 680px; font-size: 17px; line-height: 1.8; color: #c7bac2; margin: 28px 0 0; }
+.book { display: grid; grid-template-columns: minmax(80px, 22%) 1fr; gap: clamp(24px, 5vw, 90px); padding: 56px 0 64px; border-top: 1px solid #ffffff27; }
+.book:last-child { border-bottom: 1px solid #ffffff27; }
+.book-number { font: normal clamp(78px, 12vw, 180px)/.8 'Italiana', Georgia, serif; color: #9a637d; opacity: .6; }
+.book-info { max-width: 750px; }
+.book h3 { font: normal clamp(45px, 5.5vw, 84px)/1.02 'Italiana', Georgia, serif; letter-spacing: -.025em; margin: 0 0 28px; }
+.book h3 em { display: block; font-style: normal; color: #d4a9bd; }
+.book-info > p:not(.eyebrow) { font-size: 17px; line-height: 1.8; color: #d9ced4; }
+.book-info .tropes { font-size: 14px !important; color: #d9a8c1 !important; letter-spacing: .02em; margin-top: 30px; }
+.tropes span { margin: 0 6px; color: #8d687b; }
+
+.author { text-align: center; padding: 110px 24px 125px; background: radial-gradient(ellipse at top, #38202d, #140f15 65%); }
+.author h2 { font-size: clamp(64px, 8vw, 105px); }
+.author > p:last-child { font-size: 19px; line-height: 1.7; max-width: 670px; margin: 28px auto 0; color: #dfd1d9; }
+footer { padding: 30px clamp(24px, 6vw, 100px); display: flex; justify-content: space-between; gap: 20px; font-size: 13px; color: #baabb3; background: #100d11; }
+
+@media (max-width: 800px) {
+  .site-header { height: 72px; }
+  .brand { font-size: 16px; }
+  .site-header nav { gap: 18px; }
+  .hero { min-height: 610px; padding: 75px 24px 110px; }
+  .hero h1 { font-size: clamp(62px, 12vw, 92px); }
+  .hero::after { font-size: 150px; top: 12%; }
+  .hero-bottom { left: 24px; right: 24px; }
+  .books { padding: 85px 24px; }
+  .book { grid-template-columns: 100px 1fr; gap: 28px; }
+  .book h3 { font-size: clamp(40px, 6vw, 60px); }
+}
+@media (max-width: 570px) {
+  .site-header { padding: 0 18px; }
+  .brand { font-size: 14px; letter-spacing: .1em; }
+  .site-header nav { gap: 12px; }
+  .site-header nav a, .eyebrow { font-size: 12px; }
+  .hero { min-height: 630px; }
+  .hero-lead { font-size: 17px; }
+  .hero-bottom { font-size: 9px; line-height: 1.8; }
+  .hero-bottom span { margin: 0 5px; }
+  .section-intro h2 { font-size: 55px; }
+  .book { display: block; padding: 42px 0 52px; }
+  .book-number { display: block; font-size: 64px; margin: 0 0 22px; }
+  .book h3 { font-size: 56px; }
+  .book-info > p:not(.eyebrow) { font-size: 16px; }
+  .author { padding: 90px 24px; }
+  .author > p:last-child { font-size: 17px; }
+  footer { display: block; line-height: 2; }
+}
