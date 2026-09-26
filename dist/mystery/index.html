@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#100d11">
+  <meta name="description" content="Ein Geheimnis von Julia Dervona wartet auf dich.">
+  <title>Mystery · Julia Dervona</title>
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%23100d11'/%3E%3Ctext x='32' y='45' text-anchor='middle' font-family='Georgia' font-size='38' fill='%23e7bdc9'%3EJ%3C/text%3E%3C/svg%3E">
+  <link rel="stylesheet" href="/styles.css">
+  <style>
+    .mystery-main {
+      min-height: calc(100svh - 86px);
+      display: grid;
+      place-items: center;
+      padding: 56px 24px;
+      text-align: center;
+      background: radial-gradient(ellipse at 50% 38%, #432138 0%, #24151f 42%, #100d11 83%);
+    }
+    .mystery-content { width: min(100%, 660px); }
+    .mystery-content .eyebrow { margin-bottom: 22px; }
+    .mystery-content h1 {
+      font: normal clamp(58px, 9vw, 108px)/1 'Italiana', Georgia, serif;
+      letter-spacing: -.035em;
+      margin: 0;
+    }
+    .mystery-content h1 em { color: #e7b1cb; font-style: normal; }
+    .mystery-intro { color: #ddcdd6; font-size: clamp(16px, 2vw, 19px); line-height: 1.7; margin: 24px auto 42px; }
+    .audio-placeholder {
+      border: 1px solid #dbaac34d;
+      border-radius: 18px;
+      background: #ffffff0a;
+      box-shadow: 0 22px 65px #09050955;
+      padding: clamp(28px, 6vw, 46px);
+    }
+    .audio-symbol {
+      width: 70px;
+      height: 70px;
+      margin: 0 auto 27px;
+      border: 1px solid #dbaac366;
+      border-radius: 50%;
+      display: grid;
+      place-items: center;
+      color: #e7b1cb;
+    }
+    .audio-symbol svg { width: 34px; height: 34px; fill: none; stroke: currentColor; stroke-width: 1.5; stroke-linecap: round; stroke-linejoin: round; }
+    .audio-placeholder h2 { font: normal clamp(28px, 4vw, 38px)/1.2 'Italiana', Georgia, serif; margin: 0 0 12px; }
+    .audio-placeholder p { color: #cbb8c3; font-size: 15px; line-height: 1.6; margin: 0; }
+    .mystery-home { display: inline-block; margin-top: 38px; color: #d3a7bc; font-size: 14px; text-decoration: none; border-bottom: 1px solid #d3a7bc77; padding-bottom: 5px; }
+    .mystery-home:hover { color: #fff; }
+    @media (max-width: 800px) { .mystery-main { min-height: calc(100svh - 72px); } }
+  </style>
+</head>
+<body>
+  <header class="site-header">
+    <a href="/" class="brand" aria-label="Julia Dervona, zur Startseite">JULIA <span>DERVONA</span></a>
+  </header>
+  <main class="mystery-main">
+    <div class="mystery-content">
+      <p class="eyebrow">JULIA DERVONA · MYSTERY</p>
+      <h1>Da kommt <em>noch was.</em></h1>
+      <p class="mystery-intro">Du bist hier richtig. Das Geheimnis wartet noch einen kleinen Moment.</p>
+      <section class="audio-placeholder" aria-labelledby="audio-title">
+        <div class="audio-symbol" aria-hidden="true">
+          <svg viewBox="0 0 36 36"><path d="M7 15v6m5-12v18m6-23v28m6-23v18m5-12v6"/></svg>
+        </div>
+        <h2 id="audio-title">Audio folgt in Kürze</h2>
+        <p>Hier findest du bald die Aufnahme.</p>
+      </section>
+      <a class="mystery-home" href="/">Zurück zur Startseite</a>
+    </div>
+  </main>
+</body>
+</html>
