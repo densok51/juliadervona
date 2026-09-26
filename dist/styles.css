@@ -21,6 +21,11 @@ a { color: inherit; }
 .hero-lead { font-size: 19px; line-height: 1.7; color: #dbcdd5; max-width: 590px; margin: 34px 0 34px; }
 .text-link { display: inline-flex; align-items: center; gap: 12px; font-weight: 600; text-decoration: none; border-bottom: 1px solid #d8a4bc; padding-bottom: 9px; }
 .text-link span { font-size: 22px; font-weight: 400; }
+.hero-actions { display: flex; flex-wrap: wrap; align-items: center; gap: 24px 32px; }
+.mystery-button { display: inline-flex; align-items: center; justify-content: center; gap: 16px; min-height: 50px; padding: 12px 22px; border: 1px solid #e2b4cb; border-radius: 999px; background: #d4a7be; color: #21111b; font-size: 14px; font-weight: 700; text-decoration: none; transition: background .2s ease, transform .2s ease; }
+.mystery-button:hover { background: #f1c8db; transform: translateY(-2px); }
+.mystery-button:focus-visible { outline: 2px solid #fff; outline-offset: 4px; }
+.mystery-button span { font-size: 20px; font-weight: 400; line-height: 1; }
 .hero-bottom { position: absolute; bottom: 30px; left: clamp(24px, 9vw, 145px); right: clamp(24px, 9vw, 145px); margin: 0; padding-top: 18px; border-top: 1px solid #ffffff2e; font-size: 11px; font-weight: 700; letter-spacing: .2em; color: #b797a8; }
 .hero-bottom span { margin: 0 16px; color: #e1b0c8; }
 
