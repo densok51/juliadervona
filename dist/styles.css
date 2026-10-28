@@ -10,14 +10,14 @@ a { color: inherit; }
 .brand span { color: #c79caf; }
 .site-header nav { display: flex; gap: 38px; }
 .site-header nav a { font-size: 14px; text-decoration: none; color: #ddd0d8; }
-.site-header nav a:hover, .text-link:hover { color: #ffbeda; }
+.site-header nav a:hover, .site-header nav a[aria-current="page"], .text-link:hover { color: #ffbeda; }
 
 .eyebrow { color: #db9fbc; font-size: 13px; font-weight: 700; letter-spacing: .22em; line-height: 1.5; margin: 0 0 24px; }
 .hero { position: relative; overflow: hidden; padding: clamp(10px, 1.5vw, 20px) 0 32px; background: linear-gradient(180deg, #15070ed9 0%, #150910e8 62%, #100b11d9 100%), url('/assets/satin-background.jpg') center / cover no-repeat; }
 .visually-hidden { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0; }
 .hero-banner { display: block; width: 100%; max-width: 1536px; height: auto; margin: 0 auto; -webkit-mask-image: linear-gradient(to bottom, #000 0%, #000 90%, transparent 100%); mask-image: linear-gradient(to bottom, #000 0%, #000 90%, transparent 100%); }
 .hero-copy { position: relative; max-width: 780px; margin: 0 auto; padding: 20px 24px 55px; text-align: center; }
-.section-intro h2, .author h2 { font: normal clamp(64px, 7.2vw, 116px)/.98 'Italiana', Georgia, serif; letter-spacing: -.035em; margin: 0; }
+.section-intro h1, .section-intro h2, .stories-teaser h2, .author h2 { font: normal clamp(64px, 7.2vw, 116px)/.98 'Italiana', Georgia, serif; letter-spacing: -.035em; margin: 0; }
 .hero-lead { font-size: 19px; line-height: 1.7; color: #dbcdd5; max-width: 700px; margin: 0 auto 30px; }
 .text-link { display: inline-flex; align-items: center; gap: 12px; font-weight: 600; text-decoration: none; border-bottom: 1px solid #d8a4bc; padding-bottom: 9px; }
 .text-link span { font-size: 22px; font-weight: 400; }
@@ -31,7 +31,10 @@ a { color: inherit; }
 
 .books { padding: 110px clamp(24px, 9vw, 145px) 130px; background: linear-gradient(#100c12af, #100c12b8), url('/assets/satin-background.jpg') center / cover no-repeat; }
 .section-intro { max-width: 850px; margin: 0 0 70px; }
-.section-intro h2 { font-size: clamp(48px, 6vw, 82px); }
+.section-intro h1, .section-intro h2 { font-size: clamp(48px, 6vw, 82px); }
+.stories-teaser { padding: 100px clamp(24px, 9vw, 145px) 110px; background: linear-gradient(#100c12af, #100c12b8), url("/assets/satin-background.jpg") center / cover no-repeat; }
+.stories-teaser h2 { font-size: clamp(48px, 6vw, 82px); max-width: 780px; }
+.stories-teaser > p:not(.eyebrow) { max-width: 650px; font-size: 18px; line-height: 1.8; color: #d9ced4; margin: 26px 0 30px; }
 .section-intro > p:last-child { max-width: 680px; font-size: 17px; line-height: 1.8; color: #c7bac2; margin: 28px 0 0; }
 .book { display: grid; grid-template-columns: minmax(80px, 22%) 1fr; gap: clamp(24px, 5vw, 90px); padding: 56px 0 64px; border-top: 1px solid #ffffff27; }
 .book:last-child { border-bottom: 1px solid #ffffff27; }
@@ -55,6 +58,7 @@ footer { padding: 30px clamp(24px, 6vw, 100px); display: flex; justify-content: 
   .hero { padding-bottom: 28px; }
   .hero-copy { padding: 20px 24px 45px; }
   .books { padding: 85px 24px; }
+  .stories-teaser { padding: 85px 24px; }
   .book { grid-template-columns: 100px 1fr; gap: 28px; }
   .book h3 { font-size: clamp(40px, 6vw, 60px); }
 }
@@ -67,7 +71,7 @@ footer { padding: 30px clamp(24px, 6vw, 100px); display: flex; justify-content: 
   .hero-lead { font-size: 17px; }
   .hero-bottom { font-size: 9px; line-height: 1.8; }
   .hero-bottom span { margin: 0 5px; }
-  .section-intro h2 { font-size: 55px; }
+  .section-intro h1, .section-intro h2, .stories-teaser h2 { font-size: 55px; }
   .book { display: block; padding: 42px 0 52px; }
   .book-number { display: block; font-size: 64px; margin: 0 0 22px; }
   .book h3 { font-size: 56px; }
