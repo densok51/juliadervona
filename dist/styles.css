@@ -42,6 +42,7 @@ a { color: inherit; }
 .book-info { max-width: 750px; }
 .book h3 { font: normal clamp(45px, 5.5vw, 84px)/1.02 'Italiana', Georgia, serif; letter-spacing: -.025em; margin: 0 0 28px; }
 .book h3 em { display: block; font-style: normal; color: #d4a9bd; }
+.book-first h3 { line-height: 1.08; }
 .book-info > p:not(.eyebrow) { font-size: 17px; line-height: 1.8; color: #d9ced4; }
 .book-info .tropes { font-size: 14px !important; color: #d9a8c1 !important; letter-spacing: .02em; margin-top: 30px; }
 .tropes span { margin: 0 6px; color: #8d687b; }
@@ -75,6 +76,7 @@ footer { padding: 30px clamp(24px, 6vw, 100px); display: flex; justify-content: 
   .book { display: block; padding: 42px 0 52px; }
   .book-number { display: block; font-size: 64px; margin: 0 0 22px; }
   .book h3 { font-size: 56px; }
+  .book-first h3 { font-size: clamp(40px, 11vw, 50px); }
   .book-info > p:not(.eyebrow) { font-size: 16px; }
   .author { padding: 90px 24px; }
   .author > p:last-child { font-size: 17px; }
