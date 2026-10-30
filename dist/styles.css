@@ -19,6 +19,7 @@ a { color: inherit; }
 .hero-copy { position: relative; max-width: 780px; margin: 0 auto; padding: 20px 24px 55px; text-align: center; }
 .section-intro h1, .section-intro h2, .stories-teaser h2, .author h2 { font: normal clamp(64px, 7.2vw, 116px)/.98 'Italiana', Georgia, serif; letter-spacing: -.035em; margin: 0; }
 .hero-lead { font-size: 19px; line-height: 1.7; color: #dbcdd5; max-width: 700px; margin: 0 auto 30px; }
+.hero-lead span { display: block; margin-top: 16px; }
 .text-link { display: inline-flex; align-items: center; gap: 12px; font-weight: 600; text-decoration: none; border-bottom: 1px solid #d8a4bc; padding-bottom: 9px; }
 .text-link span { font-size: 22px; font-weight: 400; }
 .hero-actions { display: flex; flex-wrap: wrap; align-items: center; justify-content: center; gap: 24px 32px; }
